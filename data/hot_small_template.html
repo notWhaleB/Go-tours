@@ -1,0 +1,154 @@
+<div class="col s12 no-padding" onclick="$('#hot-modal-[%ID%]]').openModal()" style="cursor: pointer">
+    <div class="card hoverable">
+        <div class="card-image">
+            <img src="[%IMG_THUMB%]">
+            <div class="white-text col s12" style="position: absolute; bottom: 20px; height: 32px; width: 100%">
+                <div style="position: absolute; height: 32px; left: 10px">
+                    <img src="data/img/flags/32/Thailand.png" style="width: 32px; height: 32px">
+                </div>
+                <div class="truncate" style="position: absolute; height: 32px; width: calc(100% - 50px); left: 52px; top: 2px; line-height: 32px; font-size: 12pt; text-shadow: 0 0 1px #000000">
+                    [%COUNTRY_CITY%]
+                </div>
+            </div>
+        </div>
+        <div class="col s12" style="font-size: 12pt; padding: 10px 10px 25px 10px">
+            <div class="gt-hotel-name col s12 no-padding">
+                [%HOTEL_NAME%]
+            </div>
+            <div class="gt-hotel-rating col s12 no-padding">
+                <!--<i class="material-icons gt-star-rate orange-text">star_rate</i>-->
+                <!--<i class="material-icons gt-star-rate grey-text text-lighten-1">star_rate</i>-->
+                [%RATE_STARS_SMALL%]
+            </div>
+            <div class="col s12 no-padding">
+                <div class="gt-hotel-meal col s6 no-padding">
+                    <div class="gt-text-with-icon-24px">
+                        <div class="gt-left-icon-24px">
+                            <i class="material-icons">local_dining</i>
+                        </div>
+                        <div class="gt-right-text-24px gt-card-right-text">
+                            [%MEAL_SHORT%]
+                        </div>
+                    </div>
+                </div>
+                <div class="gt-hotel-room col s6 no-padding">
+                    <div class="gt-text-with-icon-24px">
+                        <div class="gt-left-icon-24px">
+                            <i class="material-icons">hotel</i>
+                        </div>
+                        <div class="gt-right-text-24px gt-card-right-text">
+                            [%ROOM_SHORT%]
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 no-padding">
+                <div class="gt-tour-start col s6 no-padding">
+                    <div class="gt-text-with-icon-24px">
+                        <div class="gt-left-icon-24px">
+                            <i class="material-icons">flight_takeoff</i>
+                        </div>
+                        <div class="gt-right-text-24px gt-card-right-text">
+                            [%FLIGHT_DAY_SHORT%]
+                        </div>
+                    </div>
+                </div>
+                <div class="gt-tour-days col s6 no-padding">
+                    <div class="gt-text-with-icon-24px">
+                        <div class="gt-left-icon-24px">
+                            <i class="material-icons">access_time</i>
+                        </div>
+                        <div class="gt-right-text-24px gt-card-right-text">
+                            [%NUM_NIGHTS%]
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gt-hot-price col s12 light-blue white-text right-align" style="font-size: 18pt; padding: 12px">
+            [%PRICE%]<span class="gt-ruble-sign">₽</span>
+        </div>
+    </div>
+</div>
+
+<div id="modal1" class="modal white modal-fixed-footer" style="min-width: 320px">
+    <div class="modal-content">
+        <div class="col s12 card no-padding">
+            <div class="col s12 no-padding">
+                <div class="card-image" style="margin: auto; width: [%IMG_FULL_RES%]px; max-width: 100%">
+                    <img src="[%IMG_FULL%]">
+                </div>
+            </div>
+
+            <div class="col s12 m6" style="padding-top: 10px">
+                <div class="white-text col s12">
+                    <div class="col no-padding" style="width: 48px; height: 48px">
+                        <img src="data/img/flags/48/Thailand.png" style="width: 48px; height: 48px">
+                    </div>
+                    <div class="col black-text" style="width: calc(100% - 50px)">
+                        <div style="height: auto; line-height: 48px; width: 100%; font-size: 16pt">[%COUNTRY_CITY%]</div>
+                    </div>
+                </div>
+                <div class="col s12" style="font-size: 18pt; padding-top: 16px">
+                    [%HOTEL_NAME%]
+                </div>
+                <div class="gt-hotel-rating col s12" style="padding-top: 10px">
+                    [%RATE_STARS%]
+                </div>
+            </div>
+            <div class="col s12 m6" style="padding-top: 10px">
+                <div class="gt-hotel-meal col s12">
+                    <div class="gt-text-with-icon-36px">
+                        <div class="gt-left-icon-36px">
+                            <i class="material-icons md-36">local_dining</i>
+                        </div>
+                        <div class="gt-right-text-36px gt-card-right-text">
+                            [%MEAL%]
+                        </div>
+                    </div>
+                </div>
+                <div class="gt-hotel-room col s12">
+                    <div class="gt-text-with-icon-36px">
+                        <div class="gt-left-icon-36px">
+                            <i class="material-icons md-36">hotel</i>
+                        </div>
+                        <div class="gt-right-text-36px gt-card-right-text">
+                            [%ROOM%]
+                        </div>
+                    </div>
+                </div>
+                <div class="gt-tour-start col s12">
+                    <div class="gt-text-with-icon-36px">
+                        <div class="gt-left-icon-36px">
+                            <i class="material-icons md-36">flight_takeoff</i>
+                        </div>
+                        <div class="gt-right-text-36px gt-card-right-text">
+                            [%FLIGHT_DAY%]
+                        </div>
+                    </div>
+                </div>
+                <div class="gt-tour-days col s12">
+                    <div class="gt-text-with-icon-36px">
+                        <div class="gt-left-icon-36px">
+                            <i class="material-icons md-36">access_time</i>
+                        </div>
+                        <div class="gt-right-text-36px gt-card-right-text">
+                            [%NUM_NIGHTS_DAYS%]
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 grey lighten-3" style="margin-top: 15px">
+                <p>
+                    [%OTHER_INFO%]
+                </p>
+            </div>
+            <div class="col s12 light-blue white-text right-align" style="height: 72px; line-height: 72px; font-size: 20pt">
+                [%PRICE%]<span class="gt-ruble-sign">₽</span>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <a class="modal-action modal-close btn-flat">Закрыть</a>
+    </div>
+</div>
